@@ -1,13 +1,31 @@
-import { useState } from "react";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
-import "./App.css";
+import PageLayout from "./pages/PageLayout";
+import AccueilPage from "./pages/AccueilPage";
+import LocationItem from "./components/LocationItem";
+import AproposPage from "./pages/AproposPage";
+import PageIntrouvable from "./pages/PageIntrouvable";
+
+const appRouter = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<PageLayout />}>
+      <Route index element={<Navigate to="/accueil" />} />
+      <Route path="/accueil" element={<AccueilPage />} />
+      <Route path="/accueil/:id" element={<LocationItem />} />
+      <Route path="/apropos" element={<AproposPage />} />
+      <Route path="/*" element={<PageIntrouvable />} />
+    </Route>
+  )
+);
 
 function App() {
-  return (
-    <>
-      <p>Test</p>
-    </>
-  );
+  return <RouterProvider router={appRouter} />;
 }
 
 export default App;
