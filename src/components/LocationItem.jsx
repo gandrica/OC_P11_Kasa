@@ -1,7 +1,18 @@
-import Carousel from "./Carousel";
+import { useNavigate } from "react-router-dom";
 import styles from "./LocationItem.module.scss";
 function LocationItem({ item }) {
-  return <main>Location Item</main>;
+  const navigate = useNavigate();
+  return (
+    <div
+      className={styles.container}
+      onClick={() => {
+        navigate(`/location/${item.id}`);
+      }}
+    >
+      <img src={item.cover} />
+      <p>{item.title}</p>
+    </div>
+  );
 }
 
 export default LocationItem;

@@ -1,10 +1,11 @@
 import Banner from "../components/Banner";
 import ItemsList from "../components/ItemsList";
-import { useFetchData } from "../customHooks/useFetchData";
+import { fetchData } from "../utils/fetchData";
 import styles from "./AproposPage.module.scss";
+
+const dropDowns = await fetchData("../../data/dropDowns.json");
+
 function AproposPage() {
-  const dropDowns = useFetchData("../../data/dropDowns.json");
-  console.log(dropDowns);
   return (
     <main>
       <Banner />

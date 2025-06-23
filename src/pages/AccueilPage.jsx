@@ -2,9 +2,12 @@ import styles from "./AccueilPage.module.scss";
 
 import Banner from "../components/Banner";
 import ItemsList from "../components/ItemsList";
-import { useFetchData } from "../customHooks/useFetchData";
+import { fetchData } from "../utils/fetchData";
+
+const locations = await fetchData("../../data/locations.json");
+
+console.log(locations);
 function AccueilPage() {
-  const locations = useFetchData("../../data/locations.json");
   return (
     <main>
       <Banner />
