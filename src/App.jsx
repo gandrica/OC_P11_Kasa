@@ -6,9 +6,9 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import PageLayout from "./pages/PageLayout";
+import PageLayout from "./layout/PageLayout";
 import AccueilPage from "./pages/AccueilPage";
-import LocationItem from "./components/LocationItem";
+import LocationPage from "./pages/LocationPage";
 import AproposPage from "./pages/AproposPage";
 import PageIntrouvable from "./pages/PageIntrouvable";
 
@@ -17,7 +17,7 @@ const appRouter = createBrowserRouter(
     <Route path="/" element={<PageLayout />}>
       <Route index element={<Navigate to="/accueil" />} />
       <Route path="/accueil" element={<AccueilPage />} />
-      <Route path="/accueil/:id" element={<LocationItem />} />
+      <Route path="/location/:id" element={<LocationPage />} />
       <Route path="/apropos" element={<AproposPage />} />
       <Route path="/*" element={<PageIntrouvable />} />
     </Route>

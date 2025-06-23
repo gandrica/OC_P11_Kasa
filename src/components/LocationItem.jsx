@@ -1,7 +1,7 @@
+import Carousel from "./Carousel";
 import styles from "./LocationItem.module.scss";
 function LocationItem({ item }) {
-  console.log(item);
-  return <div>Location</div>;
+  return <main>Location Item</main>;
 }
 
 export default LocationItem;

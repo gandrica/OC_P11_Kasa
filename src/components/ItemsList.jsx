@@ -1,26 +1,26 @@
 import styles from "./ItemsList.module.scss";
 import LocationItem from "./LocationItem";
 import DropDownItem from "./DropDownItem";
-import AdvantageItem from "./LocationItem";
+import TagItem from "./TagItem";
 function ItemsList({ list, typeOfElement }) {
   return (
     <ul>
       {typeOfElement === "location" &&
         list.map((item) => (
           <li>
-            <LocationItem location={item} />
+            <LocationItem item={item} key={item.id} />
           </li>
         ))}
       {typeOfElement === "dropDown" &&
         list.map((item) => (
           <li>
-            <DropDownItem item={item} />
+            <DropDownItem item={item} key={item.id} />
           </li>
         ))}
-      {typeOfElement === "advantage" &&
+      {typeOfElement === "tag" &&
         list.map((item) => (
           <li>
-            <AdvantageItem item={item} />
+            <TagItem item={item} key={item.id} />
           </li>
         ))}
     </ul>

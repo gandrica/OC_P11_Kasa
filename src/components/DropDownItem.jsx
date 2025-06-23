@@ -1,7 +1,12 @@
 import styles from "./DropDownItem.module.scss";
 function DropDownItem({ item }) {
-  console.log(item);
-  return <div>Drop Down Item</div>;
+  const { title, texte } = item;
+  return (
+    <div>
+      <h4>{title}</h4>
+      <p>{texte}</p>
+    </div>
+  );
 }
 
 export default DropDownItem;
