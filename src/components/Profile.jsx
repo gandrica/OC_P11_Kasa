@@ -1,6 +1,12 @@
 import styles from "./Profile.module.scss";
-function Profile() {
-  return <div></div>;
+function Profile({ host }) {
+  const { name, picture } = host;
+  return (
+    <div className={styles.profile}>
+      <p>{name}</p>
+      <img src={picture} />
+    </div>
+  );
 }
 
 export default Profile;

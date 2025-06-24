@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { fetchData } from "../utils/fetchData";
 import Carousel from "../components/Carousel";
-import Description from "../components/Description";
+import LocationHeader from "../components/LocationHeader";
 import Profile from "../components/Profile";
 import ItemsList from "../components/ItemsList";
 import Ratings from "../components/Ratings";
@@ -11,23 +11,36 @@ const locations = await fetchData("../../data/locations.json");
 
 function LocationPage() {
   const { id } = useParams();
-  const location = locations.find((location) => location.id === id);
-  const description = { title: "Description", texte: location.description };
-  const equipement = {
-    title: "Equipement",
-    texte: location.equipments.join("\n"),
+  const locationItem = locations.find((location) => location.id === id);
+  const {
+    pictures,
+    title,
+    location,
+    host,
+    tags,
+    rating,
+    description,
+    equipments,
+  } = locationItem;
+  const descriptionTag = {
+    title: "Description",
+    texte: description,
   };
+  const equipementsTag = {
+    title: "Equipement",
+    texte: equipments.join("\n"),
+  };
+  const listDropDownItems = [descriptionTag, equipementsTag];
 
-  const listDropDownItems = [description, equipement];
-  console.log(listDropDownItems);
+  console.log(rating);
 
   return (
     <main>
-      <Carousel />
-      <Description />
-      <Profile />
-      <ItemsList list={location.tags} typeOfElement="tag" />
-      <Ratings />
+      <Carousel pictures={pictures} />
+      <LocationHeader title={title} location={location} />
+      <Profile host={host} />
+      <ItemsList list={tags} typeOfElement="tag" />
+      <Ratings rating={rating} />
       <ItemsList list={listDropDownItems} typeOfElement="dropDown" />
     </main>
   );
