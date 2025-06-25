@@ -3,7 +3,11 @@ import styles from "./Logo.module.scss";
 
 function Logo() {
   const navigate = useNavigate();
-  return <div onClick={() => navigate("/")}>Logo</div>;
+  return (
+    <div onClick={() => navigate("/")}>
+      <img src="../../public/images/Logo.svg" alt="Logo Kasa" />
+    </div>
+  );
 }
 
 export default Logo;

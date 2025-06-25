@@ -8,7 +8,7 @@ const dropDowns = await fetchData("../../data/dropDowns.json");
 function AproposPage() {
   return (
     <main>
-      <Banner />
+      <Banner img="../../public/images/Apropos.png" />
       <ItemsList list={dropDowns} typeOfElement="dropDown" />
     </main>
   );

@@ -10,7 +10,10 @@ console.log(locations);
 function AccueilPage() {
   return (
     <main>
-      <Banner />
+      <Banner
+        img="../../public/images/Accueil.png"
+        msg="Chez vous, partout et ailleurs"
+      />
       <ItemsList list={locations} typeOfElement="location" />
     </main>
   );

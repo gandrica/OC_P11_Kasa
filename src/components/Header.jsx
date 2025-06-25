@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Navigation from "./Navigation";
 function Header() {
   return (
-    <header>
+    <header className={styles.header}>
       <Logo />
       <Navigation />
     </header>
