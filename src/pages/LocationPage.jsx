@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import { fetchData } from "../utils/fetchData";
+import { fetchData } from "../../public/utils/fetchData";
 import Carousel from "../components/Carousel";
 import LocationHeader from "../components/LocationHeader";
 import Profile from "../components/Profile";
 import ItemsList from "../components/ItemsList";
 import Ratings from "../components/Ratings";
-import styles from "./LocationPage.module.scss";
+import styles from "../../public/scss/pages/LocationPage.module.scss";
 
-const locations = await fetchData("../../data/locations.json");
+const locations = await fetchData("../../public/data/locations.json");
 
 function LocationPage() {
   const { id } = useParams();
@@ -35,14 +35,14 @@ function LocationPage() {
   console.log(rating);
 
   return (
-    <main>
+    <div>
       <Carousel pictures={pictures} />
       <LocationHeader title={title} location={location} />
       <Profile host={host} />
       <ItemsList list={tags} typeOfElement="tag" />
       <Ratings rating={rating} />
       <ItemsList list={listDropDownItems} typeOfElement="dropDown" />
-    </main>
+    </div>
   );
 }
 

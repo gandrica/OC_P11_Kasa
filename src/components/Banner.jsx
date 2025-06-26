@@ -1,4 +1,4 @@
-import styles from "./Banner.module.scss";
+import styles from "../../public/scss/components/Banner.module.scss";
 function Banner({ img, msg = "" }) {
   return (
     <div className={styles.banner}>

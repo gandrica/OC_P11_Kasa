@@ -1,4 +1,4 @@
-import styles from "./Button.module.scss";
+import styles from "../../public/scss/components/Button.module.scss";
 function Button() {
   return <div>Button</div>;
 }

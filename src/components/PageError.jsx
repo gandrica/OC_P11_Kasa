@@ -1,4 +1,4 @@
-import styles from "./PageError.module.scss";
+import styles from "../../public/scss/components/PageError.module.scss";
 import { Link } from "react-router-dom";
 function PageError() {
   return (

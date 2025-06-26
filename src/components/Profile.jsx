@@ -1,4 +1,4 @@
-import styles from "./Profile.module.scss";
+import styles from "../../public/scss/components/Profile.module.scss";
 function Profile({ host }) {
   const { name, picture } = host;
   return (

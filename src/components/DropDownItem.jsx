@@ -1,4 +1,4 @@
-import styles from "./DropDownItem.module.scss";
+import styles from "../../public/scss/components/DropDownItem.module.scss";
 function DropDownItem({ item }) {
   const { title, texte } = item;
   return (

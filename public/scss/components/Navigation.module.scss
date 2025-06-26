@@ -1,0 +1,16 @@
+@import "../utils/variables.scss";
+.nav {
+  width: 200px;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    li {
+      font-size: $nav-link-font-size;
+      font-weight: 500;
+      color: $base-text-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import PageError from "../components/PageError";
-import styles from "./PageIntrouvable.module.scss";
+import styles from "../../public/scss/pages/PageIntrouvable.module.scss";
 function PageIntrouvable() {
   return (
-    <main>
+    <div>
       <PageError />
-    </main>
+    </div>
   );
 }
 

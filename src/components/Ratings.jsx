@@ -1,5 +1,5 @@
 import Star from "./Star";
-import styles from "./Ratings.module.scss";
+import styles from "../../public/scss/components/Ratings.module.scss";
 
 function Ratings({ rating }) {
   const ratingsArr = Array.from({ length: 5 }, (_, i) => {
@@ -13,11 +13,13 @@ function Ratings({ rating }) {
   console.log(ratingsArr);
 
   return (
-    <div className={styles.rating}>
+    <ul className={styles.rating}>
       {ratingsArr.map((style) => (
-        <Star style={style} />
+        <li key={Math.random() * 100}>
+          <Star style={style} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 

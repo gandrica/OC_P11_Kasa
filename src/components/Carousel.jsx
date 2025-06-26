@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Carousel.module.scss";
+import styles from "../../public/scss/components/Carousel.module.scss";
 function Carousel({ pictures }) {
   const [index, setIndex] = useState(0);
   const image = pictures[index];

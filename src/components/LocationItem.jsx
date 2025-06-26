@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import styles from "./LocationItem.module.scss";
+import styles from "../../public/scss/components/LocationItem.module.scss";
 function LocationItem({ item }) {
   const navigate = useNavigate();
   return (

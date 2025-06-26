@@ -1,21 +1,20 @@
-import styles from "./AccueilPage.module.scss";
+import styles from "../../public/scss/pages/AccueilPage.module.scss";
 
 import Banner from "../components/Banner";
 import ItemsList from "../components/ItemsList";
-import { fetchData } from "../utils/fetchData";
+import { fetchData } from "../../public/utils/fetchData";
 
-const locations = await fetchData("../../data/locations.json");
+const locations = await fetchData("../../public/data/locations.json");
 
-console.log(locations);
 function AccueilPage() {
   return (
-    <main>
+    <div className={styles.pageAccueil}>
       <Banner
         img="../../public/images/Accueil.png"
         msg="Chez vous, partout et ailleurs"
       />
       <ItemsList list={locations} typeOfElement="location" />
-    </main>
+    </div>
   );
 }
 

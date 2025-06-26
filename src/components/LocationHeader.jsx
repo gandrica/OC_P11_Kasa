@@ -1,4 +1,4 @@
-import styles from "./LocationHeader.module.scss";
+import styles from "../../public/scss/components/LocationHeader.module.scss";
 function LocationHeader({ title, location }) {
   return (
     <header>
