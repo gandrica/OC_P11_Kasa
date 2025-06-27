@@ -1,3 +1,4 @@
+@import "../utils/variables.scss";
 .container {
   width: 320px;
   height: 320px;
@@ -14,6 +15,8 @@
     position: relative;
     bottom: 80px;
     left: 20px;
-    color: red;
+    color: $location-item-text-color;
+    font-size: $location-item-font-size;
+    font-weight: $location-item-font-weight;
   }
 }

@@ -1,6 +1,8 @@
-.rated {
-  color: red;
-}
-.nonRated {
-  color: gray;
+.star {
+  width: 60px;
+  height: 60px;
+  svg {
+    width: 60px;
+    height: 60px;
+  }
 }

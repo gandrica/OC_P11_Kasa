@@ -13,7 +13,7 @@ function Ratings({ rating }) {
   console.log(ratingsArr);
 
   return (
-    <ul className={styles.rating}>
+    <ul className={styles.ratings}>
       {ratingsArr.map((style) => (
         <li key={Math.random() * 100}>
           <Star style={style} />

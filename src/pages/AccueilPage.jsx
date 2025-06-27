@@ -12,6 +12,7 @@ function AccueilPage() {
       <Banner
         img="../../public/images/Accueil.png"
         msg="Chez vous, partout et ailleurs"
+        filter="0.4"
       />
       <ItemsList list={locations} typeOfElement="location" />
     </div>
