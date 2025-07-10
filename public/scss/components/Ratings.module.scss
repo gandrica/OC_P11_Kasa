@@ -1,5 +1,9 @@
+@import "../utils/variables.scss";
 .ratings {
+  grid-area: ratings;
   display: flex;
   flex-direction: row;
   list-style: none;
+  align-items: center;
+  justify-content: flex-end;
 }

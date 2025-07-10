@@ -1,0 +1,19 @@
+@import "../utils/variables.scss";
+
+.locationHeader {
+  grid-area: locationHeader;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  h2 {
+    color: $primary-color;
+    font-size: $location-header-h2-font-size;
+    font-weight: $secondary-font-weight;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 6px;
+    font-weight: $secondary-font-weight;
+  }
+}

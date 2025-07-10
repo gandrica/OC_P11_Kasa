@@ -5,6 +5,7 @@
   border-radius: 10px;
   margin: 20px;
   overflow: hidden;
+  cursor: pointer;
 
   img {
     width: 100%;
@@ -15,8 +16,8 @@
     position: relative;
     bottom: 80px;
     left: 20px;
-    color: $location-item-text-color;
-    font-size: $location-item-font-size;
-    font-weight: $location-item-font-weight;
+    color: $secondary-text-color;
+    font-size: $base-font-size;
+    font-weight: $tertiary-font-weight;
   }
 }

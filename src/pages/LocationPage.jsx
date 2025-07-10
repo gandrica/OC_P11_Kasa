@@ -32,16 +32,28 @@ function LocationPage() {
   };
   const listDropDownItems = [descriptionTag, equipementsTag];
 
-  console.log(rating);
+  function texteTransformation(text) {
+    const textSplitted = text.split("-");
+    const textSplitted1 = textSplitted[0].split(" ").join("-").slice(0, -1);
+    const textSplitted2 = textSplitted[1].includes("Paris")
+      ? "Paris"
+      : textSplitted[1];
+    const textRearranged = [textSplitted2, ", ", textSplitted1].join("");
+    return textRearranged;
+  }
+  const locationTexte = texteTransformation(location);
 
   return (
     <div className={styles.pageLocation}>
       <Caroussel pictures={pictures} />
-      <LocationHeader title={title} location={location} />
-      <Profile host={host} />
+
+      <LocationHeader title={title} location={locationTexte} />
       <ItemsList list={tags} typeOfElement="tag" />
+
+      <Profile host={host} />
       <Ratings rating={rating} />
-      <ItemsList list={listDropDownItems} typeOfElement="dropDown" />
+
+      <ItemsList list={listDropDownItems} typeOfElement="locationDropDown" />
     </div>
   );
 }

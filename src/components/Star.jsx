@@ -1,6 +1,5 @@
 import styles from "../../public/scss/components/Star.module.scss";
 function Star({ style }) {
-  console.log(style);
   return (
     <span className={styles.star}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

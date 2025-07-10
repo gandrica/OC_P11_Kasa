@@ -1,7 +1,12 @@
+@import "../utils/variables.scss";
 .pageLocation {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  grid-template-rows: min(490px) auto auto;
+  grid-gap: 30px;
+  grid-template-areas:
+    "caroussel  caroussel   caroussel"
+    "locationHeader locationHeader profile"
+    "tags  gap ratings"
+    "dropDownItem  dropDownItem dropDownItem";
 }

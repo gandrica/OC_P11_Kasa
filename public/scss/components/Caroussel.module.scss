@@ -1,5 +1,6 @@
 @import "../utils/variables.scss";
 .caroussel {
+  grid-area: caroussel;
   position: relative;
   top: 0;
   left: 0;
@@ -54,8 +55,8 @@
     .rightArrow {
       top: 50%;
       right: 5%;
-      font-size: $caroussel-font-size;
-      font-weight: $caroussel-font-weight;
+      font-size: $base-font-size;
+      font-weight: $secondary-font-weight;
     }
   }
 }
