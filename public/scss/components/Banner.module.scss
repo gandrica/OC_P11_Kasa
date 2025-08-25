@@ -16,11 +16,8 @@
     object-fit: fill;
   }
   p {
-    position: relative;
+    position: absolute;
     z-index: 3;
-    top: -50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
     font-size: $banner-font-size;
     font-weight: $tertiary-font-weight;
     color: $secondary-text-color;

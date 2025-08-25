@@ -5,6 +5,7 @@ import LocationHeader from "../components/LocationHeader";
 import Profile from "../components/Profile";
 import ItemsList from "../components/ItemsList";
 import Ratings from "../components/Ratings";
+import PageIntrouvable from "./PageIntrouvable";
 import styles from "../../public/scss/pages/LocationPage.module.scss";
 
 const locations = await fetchData("../../public/data/locations.json");
@@ -12,6 +13,7 @@ const locations = await fetchData("../../public/data/locations.json");
 function LocationPage() {
   const { id } = useParams();
   const locationItem = locations.find((location) => location.id === id);
+  if (!locationItem) return <PageIntrouvable />;
   const {
     pictures,
     title,

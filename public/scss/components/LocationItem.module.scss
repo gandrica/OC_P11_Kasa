@@ -3,7 +3,6 @@
   width: 320px;
   height: 320px;
   border-radius: 10px;
-  margin: 20px;
   overflow: hidden;
   cursor: pointer;
 
@@ -12,9 +11,10 @@
     height: 100%;
   }
   p {
+    width: 70%;
     z-index: 2;
     position: relative;
-    bottom: 80px;
+    bottom: 60px;
     left: 20px;
     color: $secondary-text-color;
     font-size: $base-font-size;
