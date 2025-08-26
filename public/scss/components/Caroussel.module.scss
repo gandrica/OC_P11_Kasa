@@ -35,8 +35,10 @@
 
       transform: translate(-50%, -50%);
       svg {
-        width: 80px;
+        width: 70px;
         cursor: pointer;
+        font-size: $base-font-size;
+        font-weight: $secondary-font-weight;
       }
       path {
         fill: #fff;
@@ -47,16 +49,15 @@
     }
     .leftArrow {
       top: 50%;
-      left: 5%;
+      left: 50px;
     }
     .numPages {
       bottom: 2%;
+      margin-right: -100px;
     }
     .rightArrow {
       top: 50%;
-      right: 5%;
-      font-size: $base-font-size;
-      font-weight: $secondary-font-weight;
+      right: -27px;
     }
   }
 }

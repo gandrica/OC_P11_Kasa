@@ -3,6 +3,7 @@ import styles from "../../public/scss/components/DropDownItem.module.scss";
 function DropDownItem({ item }) {
   const { title, texte } = item;
   const [visible, setVisible] = useState(false);
+
   return (
     <div className={styles.dropDownItem}>
       <h4
@@ -26,7 +27,9 @@ function DropDownItem({ item }) {
           </span>
         )}
       </h4>
-      {visible && <p>{texte}</p>}
+      <p>
+        <span className={visible ? "visible" : "invisible"}>{texte}</span>
+      </p>
     </div>
   );
 }

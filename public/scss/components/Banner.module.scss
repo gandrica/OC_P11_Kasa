@@ -1,7 +1,9 @@
 @import "../utils/variables.scss";
 .banner {
+  max-height: 415px;
   width: 100%;
-  height: 350px;
+  height: 64%;
+
   border-radius: 10px;
   overflow: hidden;
   display: flex;
