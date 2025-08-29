@@ -7,27 +7,16 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-
-    &.left {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+    @media only screen and (max-width: 878px) {
+      flex-direction: column;
+      padding: 20px 0;
     }
-    &.right {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+    .right {
+      @media only screen and (max-width: 878px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+      }
     }
   }
-  // display: grid;
-  // grid-template-columns: 1fr 80px 1fr;
-  // grid-template-rows: max(415px) auto auto;
-  // grid-gap: 22px;
-  // grid-template-areas:
-  //   "caroussel  caroussel   caroussel"
-  //   "locationHeader locationHeader profile"
-  //   "tags  gap ratings"
-  //   "dropDownItem  dropDownItem dropDownItem";
 }

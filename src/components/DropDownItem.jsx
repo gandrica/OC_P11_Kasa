@@ -3,7 +3,6 @@ import styles from "../../public/scss/components/DropDownItem.module.scss";
 function DropDownItem({ item }) {
   const { title, texte } = item;
   const [visible, setVisible] = useState(false);
-  console.log(texte);
 
   return (
     <div

@@ -1,0 +1,25 @@
+@import "../utils/variables.scss";
+.errorPage {
+  width: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  h2 {
+    color: $primary-color;
+    font-size: 288px;
+    font-weight: $tertiary-font-weight;
+  }
+  p {
+    color: $primary-color;
+    font-size: 36px;
+    font-weight: $secondary-font-weight;
+    margin-bottom: 80px;
+  }
+  a {
+    color: $base-text-color;
+    font-size: $base-font-size;
+    font-weight: $secondary-font-weight;
+  }
+}

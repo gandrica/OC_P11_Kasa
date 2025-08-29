@@ -1,6 +1,6 @@
 @import "../utils/variables.scss";
 .profile {
-  grid-area: profile;
+  order: 2;
   display: flex;
   flex-direction: row;
   align-items: center;

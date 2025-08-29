@@ -1,9 +1,9 @@
-import PageError from "../components/PageError";
+import ErrorComponent from "../components/ErrorComponent";
 import styles from "../../public/scss/pages/PageIntrouvable.module.scss";
 function PageIntrouvable() {
   return (
-    <div>
-      <PageError />
+    <div className={styles.errorPage}>
+      <ErrorComponent />
     </div>
   );
 }

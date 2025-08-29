@@ -9,9 +9,15 @@
   background-color: $footer-background-color;
   padding: 40px 0;
   margin: 0;
+  @media only screen and (max-width: 878px) {
+    justify-content: space-around;
+  }
   p {
     color: $secondary-text-color;
     font-size: $secondary-font-size;
     font-weight: $secondary-font-weight;
+    @media only screen and (max-width: 878px) {
+      font-size: $base-mobile-font-size;
+    }
   }
 }

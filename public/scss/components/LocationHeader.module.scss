@@ -14,9 +14,15 @@
     font-size: $location-header-h2-font-size;
     font-weight: $secondary-font-weight;
     margin-bottom: 0;
+    @media only screen and (max-width: 878px) {
+      font-size: $base-font-size;
+    }
   }
   p {
     margin-top: 6px;
     font-weight: $secondary-font-weight;
+    @media only screen and (max-width: 878px) {
+      font-size: 14px;
+    }
   }
 }

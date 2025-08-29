@@ -23,5 +23,8 @@
     font-size: $banner-font-size;
     font-weight: $tertiary-font-weight;
     color: $secondary-text-color;
+    @media only screen and (max-width: 878px) {
+      font-size: $secondary-font-size;
+    }
   }
 }

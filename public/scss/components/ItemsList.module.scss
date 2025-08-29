@@ -26,6 +26,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 76px;
+  @media only screen and (max-width: 878px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
 }
 
 .tags {
