@@ -11,6 +11,10 @@
       font-weight: $secondary-font-weight;
       color: $base-text-color;
       text-decoration: none;
+      &[aria-current="page"] {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
     }
   }
 }

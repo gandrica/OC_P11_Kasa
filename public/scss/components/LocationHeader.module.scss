@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  max-height: 120px;
+  height: auto;
+  padding-bottom: 14px;
   h2 {
     color: $primary-color;
     font-size: $location-header-h2-font-size;

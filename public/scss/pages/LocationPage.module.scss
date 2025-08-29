@@ -1,13 +1,33 @@
 @import "../utils/variables.scss";
 .pageLocation {
   grid-area: content;
-  display: grid;
-  grid-template-columns: 1fr 80px 1fr;
-  grid-template-rows: 64% auto auto;
-  grid-gap: 22px;
-  grid-template-areas:
-    "caroussel  caroussel   caroussel"
-    "locationHeader locationHeader profile"
-    "tags  gap ratings"
-    "dropDownItem  dropDownItem dropDownItem";
+  display: flex;
+  flex-direction: column;
+  .description {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &.left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &.right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  // display: grid;
+  // grid-template-columns: 1fr 80px 1fr;
+  // grid-template-rows: max(415px) auto auto;
+  // grid-gap: 22px;
+  // grid-template-areas:
+  //   "caroussel  caroussel   caroussel"
+  //   "locationHeader locationHeader profile"
+  //   "tags  gap ratings"
+  //   "dropDownItem  dropDownItem dropDownItem";
 }

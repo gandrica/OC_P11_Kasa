@@ -5,10 +5,20 @@ function Navigation() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <NavLink to="/accueil">Accueil</NavLink>
+          <NavLink
+            to="/accueil"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            Accueil
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/apropos">A Propos</NavLink>
+          <NavLink
+            to="/apropos"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            A Propos
+          </NavLink>
         </li>
       </ul>
     </nav>

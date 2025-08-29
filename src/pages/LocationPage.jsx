@@ -30,7 +30,7 @@ function LocationPage() {
   };
   const equipementsTag = {
     title: "Equipement",
-    texte: equipments.join("\n"),
+    texte: equipments,
   };
   const listDropDownItems = [descriptionTag, equipementsTag];
 
@@ -48,12 +48,17 @@ function LocationPage() {
   return (
     <div className={styles.pageLocation}>
       <Caroussel pictures={pictures} />
+      <div className={styles.description}>
+        <div className={styles.left}>
+          <LocationHeader title={title} location={locationTexte} />
+          <ItemsList list={tags} typeOfElement="tag" />
+        </div>
 
-      <LocationHeader title={title} location={locationTexte} />
-      <ItemsList list={tags} typeOfElement="tag" />
-
-      <Profile host={host} />
-      <Ratings rating={rating} />
+        <div className={styles.right}>
+          <Profile host={host} />
+          <Ratings rating={rating} />
+        </div>
+      </div>
 
       <ItemsList list={listDropDownItems} typeOfElement="locationDropDown" />
     </div>
