@@ -5,20 +5,28 @@
   &.increaseHeight {
     max-height: 200px;
   }
+  @media screen and (max-width: 878px) {
+    max-height: 56px;
+  }
 
   h4 {
     width: 100%;
     background-color: $primary-color;
+    font-size: $base-font-size;
     color: $secondary-text-color;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 0.6em 0.84em;
     border-radius: 6px;
     position: relative;
     z-index: 3;
     overflow: hidden;
+    @media screen and (max-width: 878px) {
+      font-size: 1.2rem;
+      padding: 0.35em 0.74em;
+    }
 
     svg {
       width: 24px;
@@ -39,7 +47,7 @@
     list-style: none;
   }
   div {
-    padding: 18px 20px 38px 20px;
+    padding: 1em 1.1em 2.1em;
   }
   div,
   ul {
@@ -60,11 +68,11 @@
 @keyframes easeInDescription {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-80px);
   }
   62% {
     opacity: 0;
-    transform: translateY(-70px);
+    transform: translateY(-60px);
   }
   64% {
     opacity: 0.4;

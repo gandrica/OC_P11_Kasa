@@ -8,21 +8,18 @@
   flex-direction: column;
   max-height: 120px;
   height: auto;
-  padding-bottom: 14px;
+  padding-bottom: 0.78em;
   h2 {
     color: $primary-color;
-    font-size: $location-header-h2-font-size;
+    font-size: $tertiary-font-size;
     font-weight: $secondary-font-weight;
     margin-bottom: 0;
-    @media only screen and (max-width: 878px) {
-      font-size: $base-font-size;
-    }
   }
   p {
-    margin-top: 6px;
+    margin-top: 0.33em;
     font-weight: $secondary-font-weight;
     @media only screen and (max-width: 878px) {
-      font-size: 14px;
+      font-size: 1.2rem;
     }
   }
 }

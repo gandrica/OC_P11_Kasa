@@ -1,25 +1,70 @@
 @import "../utils/variables.scss";
-.errorPage {
-  width: auto;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+.error {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  grid-row-gap: 4em;
+
   h2 {
+    width: 100%;
     color: $primary-color;
-    font-size: 288px;
+    font-size: 16rem;
     font-weight: $tertiary-font-weight;
+    text-align: center;
+    @media screen and (max-width: 978px) {
+      font-size: 14rem;
+    }
+    @media screen and (max-width: 878px) {
+      font-size: 12rem;
+    }
+    @media screen and (max-width: 778px) {
+      font-size: 10rem;
+    }
+    @media screen and (max-width: 678px) {
+      font-size: 8rem;
+    }
   }
   p {
+    width: 100%;
     color: $primary-color;
-    font-size: 36px;
+    font-size: $tertiary-font-size;
     font-weight: $secondary-font-weight;
-    margin-bottom: 80px;
+    text-align: center;
+    margin-bottom: 2.2em;
+    @media screen and (max-width: 978px) {
+      font-size: 2.1rem;
+    }
+    @media screen and (max-width: 878px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 778px) {
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width: 678px) {
+      font-size: 1.5rem;
+    }
   }
   a {
+    width: 100%;
     color: $base-text-color;
     font-size: $base-font-size;
     font-weight: $secondary-font-weight;
+    margin-bottom: 4.44em;
+    text-align: center;
+    @media screen and (max-width: 978px) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 878px) {
+      font-size: 1.3rem;
+    }
+    @media screen and (max-width: 778px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 678px) {
+      font-size: 1.1rem;
+    }
   }
 }

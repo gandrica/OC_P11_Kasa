@@ -7,16 +7,26 @@
   grid-template-rows: repeat(auto-fit, min-content);
   justify-content: center;
   align-content: center;
-  grid-gap: 40px;
-  margin-top: 70px;
+  grid-gap: 2.2em;
+  margin-top: 3.89em;
+  @media only screen and (max-width: 878px) {
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-rows: repeat(auto-fit, min-content);
+  }
+  @media only screen and (max-width: 810px) {
+    grid-template-columns: 1fr;
+  }
 }
 .dropDowns {
-  margin-top: 40px;
+  margin-top: 2.2em;
   margin-left: auto;
   margin-right: auto;
   width: 84%;
   list-style: none;
   transition: all 0.6s;
+  @media only screen and (max-width: 878px) {
+    width: 100%;
+  }
 }
 
 .locationDropDowns {
@@ -25,17 +35,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 76px;
+  grid-gap: 4.2em;
   @media only screen and (max-width: 878px) {
     grid-template-columns: 1fr;
-    grid-row-gap: 10px;
+    grid-row-gap: 0;
   }
 }
 
 .tags {
+  width: 100%;
+  height: auto;
   grid-area: tags;
   display: flex;
   list-style: none;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }

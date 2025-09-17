@@ -1,7 +1,15 @@
 .header {
+  max-width: 1440px;
+  width: 100%;
   grid-area: header;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 2.2em;
+
+  @media screen and (max-width: 320px) {
+    justify-content: center;
+    gap: 1.666rem;
+  }
 }
