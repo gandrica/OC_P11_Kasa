@@ -1,4 +1,5 @@
 import styles from "../../public/scss/components/Banner.module.scss";
+import { splitWordsFunction } from "../../public/utils/splitWordsFunction.jsx";
 function Banner({ img, msg = "", filter = 1 }) {
   return (
     <div className={styles.banner}>
@@ -7,7 +8,7 @@ function Banner({ img, msg = "", filter = 1 }) {
         alt="Page banner"
         style={{ filter: `brightness(${filter})` }}
       />
-      <p>{msg}</p>
+      {splitWordsFunction(msg, "", ", ")}
     </div>
   );
 }
