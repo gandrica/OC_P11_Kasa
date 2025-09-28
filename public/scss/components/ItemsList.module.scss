@@ -7,8 +7,10 @@
   grid-template-rows: repeat(auto-fit, min-content);
   justify-content: center;
   align-content: center;
-  grid-gap: 2.2em;
+  grid-gap: 4.2em;
   margin-top: 3.89em;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width: 878px) {
     grid-template-columns: repeat(auto-fit, 320px);
     grid-template-rows: repeat(auto-fit, min-content);

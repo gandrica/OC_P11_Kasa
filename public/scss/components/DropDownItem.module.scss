@@ -31,7 +31,7 @@
     svg {
       width: 24px;
       height: 24px;
-      transform: rotate(0deg);
+      transform: rotate(180deg);
       transition: transform 0.5s;
       path {
         width: 100%;
@@ -39,7 +39,7 @@
         fill: $secondary-text-color;
       }
       &.left {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
       }
     }
   }
